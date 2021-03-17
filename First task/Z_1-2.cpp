@@ -4,6 +4,7 @@ using namespace std;
 
 int main()
 {
+    setlocale(LC_ALL, "RUSSIAN");
     double a;
     double b;
     cout << "Введите два числа";
