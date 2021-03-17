@@ -4,31 +4,47 @@
 #include <limits>
 
 using namespace std;
-
-double y(const double x);
+bool IsCalulated(const double x, double y);
+///double Y(const double x, const double y);
 
 int main()
-
 {
-
 	setlocale(LC_ALL, "RUSSIAN");
 
 	const auto leftBound = 1.0;
-	const auto rigtBound = 0.5;
+	const auto rightBound = 0.5;
 	const auto step = 0.1;
 
 	auto x = leftBound;
+	cout << "x             y \n";
 
-	while (x <= leftBound)
+	while ((x < leftBound) || (abs( x - rightBound ) < step))
 	{
-		cout << " x = " << x << "y = " << y(x) << endl;
-		x += step;
-		x = x = step;
+		double y;
+		if (IsCalulated(x,y))
+		{
+			cout << " x = " << setprecision(2) << x 
+				 << "y = " << setprecision(5) << y << endl;
+			x += step;
+		}
+		else
+		{
+			cout << " x = " << setprecision(2) << x
+				<< " not defined\n";
+		}
+
 	}
+	
+
+
+	bool IsCalulated(const double x, double y);
+	{
+		const auto IsCalulated = x >= 0;
+	}
+	///double Y(const double x, const double y);
+	///{
+	///	return x + cos(pow(x, 0.52) + 2);
+	///}
 	return 0;
 
-	double y(const double x);
-	{
-		return x + cos(pow(x, 0.52) + 2);
-	}
 }
