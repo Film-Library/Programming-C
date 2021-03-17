@@ -2,8 +2,8 @@
 #include <cmath>
 #include <iomanip>
 #include <limits>
-double f1(const double x, const double a);
-double f2(const double x, const double a);
+double F1(const double x, const double a);
+double F2(const double x, const double a);
 
 using namespace std;
 
@@ -21,18 +21,18 @@ using namespace std;
 
     if (x * a < 1)
     {
-        cout << "y =  " << f1(x, a);
+        cout << "y =  " << F1(x, a);
     }
     else (x * a >= 1);
     {
-        cout << "y =  " << f2(x, a);
+        cout << "y =  " << F2(x, a);
     }
    
-    double f1(const double x, const double a);
+    double F1(const double x, const double a);
     {
         return a * sin((x * x - 1) / 10);
     }
-    double f2(const double x, const double a);
+    double F2(const double x, const double a);
     {
         return a * cos((x - 1) / 10);
     }
