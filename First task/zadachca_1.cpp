@@ -9,6 +9,7 @@ bool isEven(int value);
 
 int main()
 {
+    setlocale(LC_ALL, "RUSSIAN");
     double x = 2.2;
     double y = 9.2;
     double z = 10.2;
