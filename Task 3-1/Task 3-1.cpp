@@ -4,7 +4,7 @@
 #include <limits>
 
 using namespace std;
-bool IsCalulated(const double x, double y);
+bool IsCalulted(const double x, double y);
 ///double Y(const double x, const double y);
 
 int main()
@@ -21,7 +21,7 @@ int main()
 	while ((x < leftBound) || (abs( x - rightBound ) < step))
 	{
 		double y;
-		if (IsCalulated(x,y))
+		if (IsCalulted(x,y))
 		{
 			cout << " x = " << setprecision(2) << x 
 				 << "y = " << setprecision(5) << y << endl;
@@ -37,7 +37,7 @@ int main()
 	
 
 
-	bool IsCalulated(const double x, double y);
+	bool IsCalulted(const double x, double y);
 	{
 		const auto IsCalulated = x >= 0;
 	}
