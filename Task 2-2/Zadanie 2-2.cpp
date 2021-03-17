@@ -2,11 +2,11 @@
 #include <cmath>
 #include <iomanip>
 #include <limits>
+double f1(const double x, const double a);
+double f2(const double x, const double a);
 
 using namespace std;
 
-double f1(const double x, const double a);
-double f2(const double x, const double a);
 
     int main() { 
       

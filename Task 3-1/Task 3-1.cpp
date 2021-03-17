@@ -8,6 +8,7 @@ using namespace std;
 double y(const double x);
 
 int main()
+
 {
 
 	setlocale(LC_ALL, "RUSSIAN");
@@ -24,6 +25,7 @@ int main()
 		x += step;
 		x = x = step;
 	}
+	return 0;
 
 	double y(const double x);
 	{
