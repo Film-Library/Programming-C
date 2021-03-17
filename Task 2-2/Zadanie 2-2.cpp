@@ -2,11 +2,11 @@
 #include <cmath>
 #include <iomanip>
 #include <limits>
-double F1(const double x, const double a);
-double F2(const double x, const double a);
 
 using namespace std;
 
+double F1(const double x, const double a);
+double F2(const double x, const double a);
 
     int main() { 
       
@@ -16,17 +16,18 @@ using namespace std;
     double x;
     cout << "Введите переменную х = ";
     cin >> x;
-
+    double result;
  
-
-    if (x * a < 1)
+    if ((x * a) < 1)
     {
-        cout << "y =  " << F1(x, a);
+       result =  F1(x, a);
     }
-    else (x * a >= 1);
+    else ((x * a) >= 1);
     {
-        cout << "y =  " << F2(x, a);
+       result = F2(x, a);
     }
+    cout << "y = " << setprecision(15) << result;
+    return(0);
    
     double F1(const double x, const double a);
     {
@@ -36,5 +37,5 @@ using namespace std;
     {
         return a * cos((x - 1) / 10);
     }
-    return(0);
+   
 }
