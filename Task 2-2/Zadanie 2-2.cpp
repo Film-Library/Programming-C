@@ -5,37 +5,28 @@
 
 using namespace std;
 
-double F1(const double x, const double a);
-double F2(const double x, const double a);
+int main() 
+{
 
-    int main() { 
-      
     setlocale(LC_ALL, "RUSSIAN");
+    
+    const double a = 0.3;
 
-    const auto a = 0.3;
     double x;
     cout << "Введите переменную х = ";
     cin >> x;
     double result;
- 
+
     if ((x * a) < 1)
     {
-       result =  F1(x, a);
+        result = a* sin((x * x - 1) / 10);
+        cout << "При условии ((x * a) < 1) => y = " << setprecision(15) << result;
     }
     else ((x * a) >= 1);
     {
-       result = F2(x, a);
+        result = a* cos((x - 1) / 10);
+        cout << "При условии ((x * a) => 1) => y = " << setprecision(15) << result;
     }
-    cout << "y = " << setprecision(15) << result;
+   
     return(0);
-   
-    double F1(const double x, const double a);
-    {
-        return a * sin((x * x - 1) / 10);
-    }
-    double F2(const double x, const double a);
-    {
-        return a * cos((x - 1) / 10);
-    }
-   
 }
