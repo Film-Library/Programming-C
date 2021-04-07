@@ -27,6 +27,5 @@ int main()
         result = a* cos((x - 1) / 10);
         cout << "При условии ((x * a) => 1) => y = " << setprecision(15) << result;
     }
-   
     return(0);
 }

@@ -1,7 +1,7 @@
 ﻿
 #include <iostream>
 using namespace std;
-
+ 
 int main()
 {
     setlocale(LC_ALL, "RUSSIAN");
@@ -36,6 +36,5 @@ int main()
             cout << " Площадь грани = " << sg << " \n";
             break;
     }
-
-    return 0;
+ return 0;
 }
